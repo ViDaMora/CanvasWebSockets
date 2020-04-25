@@ -55,12 +55,15 @@ height: 60px;
 }
 #rojo{
   background-color: red;
+  color: red;
 
 }
 #verde{
   background-color: green;
+  color: green;
 
 }
 #azul{
 background-color: blue;
+color:blue;
 }

@@ -20,15 +20,19 @@ function init(){
 
     const alto = window.innerHeight;
     const ancho = alto + alto*0.5;
-    var background = new Image();
     canvas.height =alto;
     canvas.width=  ancho;
     const socket = io(); //conexion al server
 
     savebtn.addEventListener('click',(e)=>{
-       
-        var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");     
-        window.location.href=image;
+
+      //  var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");     
+      //  window.location.href=image;
+html2canvas(canvas).then(canvas=>{
+     var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");     
+    window.location.href=image;
+})
+
 });
   
     clearbtn.addEventListener('click',(e)=>{
