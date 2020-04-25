@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/style.css">
+<title>Pizarra</title>
+</head>
+
+<body>
+  <div id="colores" >
+    <h1 id="titulo">COLORES</h1>
+     <input type="submit" value="black" class="marcadores" id="negro">
+     <input type="submit" value="green" class="marcadores" id="verde">
+     <input type="submit" value="red" class="marcadores" id="rojo">
+     <input type="submit" value="blue" class="marcadores" id="azul">
+  </div>
+  <div id="set">
+    <input type="submit" value="clear"  id="clear" class="seters">
+
+    <input type="submit" value="save"  id="save" class="seters">
+  </div>
+<canvas id="drawing" position="relative" display="block" ></canvas>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>

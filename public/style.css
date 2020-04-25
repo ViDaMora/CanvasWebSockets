@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body, html{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+canvas{
+
+  background-color: wheat;
+}
+
+#colores{
+
+  position: absolute;
+  margin-top: 15%;
+  left: 80%;
+
+}
+#titulo{
+text-align: center;
+
+
+}
+
+#set{
+  text-align: center;
+  position: absolute;
+  width: 200px;
+  height:40px;
+  margin-top: 25%;
+  left: 80%;
+
+}
+.seters{
+  text-align: center;
+  font-size: 150%;
+  width: 200px;
+  margin-top: 12px;;
+  height:40px;
+}
+.marcadores{
+position: relative;
+width: 60px;
+height: 60px;
+}
+
+#negro{
+  background-color: black;
+
+}
+#rojo{
+  background-color: red;
+
+}
+#verde{
+  background-color: green;
+
+}
+#azul{
+background-color: blue;
+}
